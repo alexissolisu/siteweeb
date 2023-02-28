@@ -1,0 +1,117 @@
+<!DOCTYPE html">
+
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link type="image/x-icon" href="https://sysweb.unach.mx/resources/imagenes/favicon.ico" rel="shortcut icon" />
+    <!--Comienza Estilos importados de  la UNACH-->
+    <link rel="stylesheet" href="http://sysweb.unach.mx/Ingresos/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://sysweb.unach.mx/Ingresos/bootstrap/css/mdb.css" />
+   
+        
+    <title style="text-align: center; align-items: center; align-content: center;">
+        Sistema UNACH
+    </title>
+
+</head>
+
+<body>
+    <form name="form1" method="post" action="./" id="form1">
+
+
+
+        <div class="page-header" style="background-color: #18386b">
+            <div class="row">
+                <div class="col-md-4">
+                    <img id="imgSYSWEB" src="../static/imagenes/sys.png"
+                        class="img-fluid d-none d-sm-none d-md-block" alt="Responsive image" />
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="text-light font-weight-bold">
+                        <h4 class="media-heading">UNACH</h4>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="../static/imagenes/unachlogo.jpeg"
+                        class="img-fluid d-none d-sm-none d-md-block" alt="Responsive image" />
+                </div>
+            </div>
+        </div>
+        <div class="bg-light">
+            <article class="card-body mx-auto" style="max-width: 450px;">
+                <div class="card">
+                    <div class="card-header">
+                        <span>
+                            <h5>Iniciar Sesión</h5>
+                        </span>
+                        <div class="d-flex justify-content-end social_icon">                            
+                        </br>
+                            <span>
+                                <button id="imgFacebook" type="button" class="btn btn-primary btn-lg" style="border-radius: 20px;">                                    
+                                    <img src="../static/imagenes/meta.png" height="20px;" width="30px;">
+                                </button>
+                                &nbsp;
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                    data-target="#exampleModal" style="border-radius: 20px;">
+                                    <img src="../static/imagenes/twitter.png" height="20px" width="30px">
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">  
+                        <div class="form-group input-group">
+                            <select name="DDLTipoUsuario" id="DDLTipoUsuario" class="form-control">                              
+                                <option value="2">Alumno &#243; Aspirante</option>
+                                <option value="3">Maestro</option>
+                                <option value="4">Personal Administrativo</option>
+                                <option value="5">Proveedores</option>
+                                <option value="1">Seleccione usuario</option>
+                            </select>
+                        </div>
+                        <div class="form-group input-group">                         
+                            <input name="txtCve" type="text" id="txtCve" tabindex="1" class="form-control" placeholder="Email"/>
+                        </div>
+                        <div class="form-group input-group">
+                            <input name="txtPassword" type="password" id="txtPassword" tabindex="2" class="form-control"
+                                placeholder="Contraseña" />
+                        </div>
+                        <div class="form-group text-center">
+                            <br />
+                            <div id="UpdatePanel1">
+
+                                <input type="submit" name="btnIngresar" value="Iniciar Sesión" id="btnIngresar"
+                                    tabindex="5" class="btn" style="background-color: #18386b; color: #fff;" />
+                            </div>
+                        </div>
+                        <p class="note note-warning">
+                            Recuerda no compartir tu contraseña; es de uso personal.
+                        </p>
+                    </div>            
+                </div>
+            </article>
+        </div>
+        <div class="piePagina" style="width: 100%">
+            <footer class="page-footer-copyright font-small pt-4" style="background-color: #585855; color: #fff">
+                <div class="footer-copyright text-center py-3">
+                    <div>
+                        <hr class="clearfix w-100 d-md-none pb-3">
+                        <div >
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                            <p>
+                                <i class="fas fa-home mr-3"></i>Col. Centro, enfrente de BANAMEX
+                            </p>
+                            <p><i class="fas fa-envelope mr-3"></i>informes@servicios.mx</p>
+                            <p><i class="fas fa-phone mr-3"></i>Celular: 9612832929</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </form>
+</body>
+
+</html>
